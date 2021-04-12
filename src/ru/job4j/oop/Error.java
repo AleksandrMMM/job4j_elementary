@@ -23,7 +23,16 @@ public class Error {
         Error error = new Error(true, 404, "not faund");
         Error error1 = new Error(false, 400, "not ");
 
-        System.out.println(error.toString());
-        System.out.println(error1.toString());
+        System.out.println(error);
+        System.out.println(error1);
+    }
+
+    @Override
+    public String toString() {
+        return "Error{" +
+                "active=" + active +
+                ", status=" + status +
+                ", massage='" + massage + '\'' +
+                '}';
     }
 }
