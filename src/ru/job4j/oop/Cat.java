@@ -1,13 +1,8 @@
 package oop;
-
-
 public class Cat {
 
     private String name;
-
     private String food;
-
-
 
     public void show() {
         System.out.println(this.name);
@@ -19,7 +14,6 @@ public class Cat {
     }
 
     void giveNick(String nick) {
-
         this.name = nick;
     }
 
@@ -31,7 +25,6 @@ public class Cat {
         gav.show();
         System.out.println("There are black's food.");
         Cat black = new Cat();
-
         black.eat("fish");
         black.giveNick("black");
         black.show();
