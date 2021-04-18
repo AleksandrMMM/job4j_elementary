@@ -2,48 +2,19 @@ package oop;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.job4j.condition.Point;
+import oop.Point;
 
 public class PointTest {
+    public PointTest() {
+    }
+
     @Test
     public void when00to20then2() {
-        int expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
-    }
-    @Test
-    public void when20to20then2() {
-        int expected = 2;
-        int x1 = 2;
-        int y1 = 0;
-        int x2 = 0;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
-    }
-    @Test
-    public void when00to02then2() {
-        int expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 0;
-        int y2 = 2;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
-    }
-    @Test
-        public void when20to00then2() {
-            int expected = 2;
-            int x1 = 2;
-            int y1 = 0;
-            int x2 = 0;
-            int y2 = 0;
-            double out = Point.distance(x1, y1, x2, y2);
-            Assert.assertEquals(expected, out, 0.01);
-        }
+        double expected = 4.24;
+        Point point1 = new Point(2, 3);
+        Point point2 = new Point(5, 6);
 
+        double out = point2.distance(point1);
+        Assert.assertEquals((double) expected, out, 0.01D);
+    }
 }
