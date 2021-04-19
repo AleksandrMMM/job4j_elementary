@@ -5,8 +5,7 @@ import org.junit.Test;
 import oop.Point;
 
 public class PointTest {
-    public PointTest() {
-    }
+
 
     @Test
     public void when00to20then2() {
