@@ -19,8 +19,11 @@ public class Library {
             System.out.println(books[i].getName() + " " + books[i].getCount());
 
         }
-        books[0] = book3;
-        books[2] = book1;
+        Book tmp = books[0];
+
+        books[0] = books[3];
+
+        books[3] = tmp;
         System.out.println(" ");
         for (int i = 0; i < books.length; i++) {
             System.out.println(books[i].getName() + " " + books[i].getCount());
@@ -28,7 +31,7 @@ public class Library {
         }
         System.out.println();
         for (Book b: books) {
-            if (b.getName().equals("Clean code")) {
+            if ("Clean code".equals(b.getName())) {
                 System.out.println(b.getName() + " " + b.getCount());
             }
         }
